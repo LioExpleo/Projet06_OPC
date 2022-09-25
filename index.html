@@ -1,0 +1,206 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <title>Titre de la page qui s'affiche dans le navigateur</title>
+
+  </head>
+  <body> 
+    <!-- DEBUT TEST -->
+    <!-- DEBUT MODAL************************************************************************************** -->
+    <!--<div class="modal-container">
+      <div class="overlay modal-trigger"></div>
+      <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
+        <button 
+        aria-label="close modal"
+        class="close-modal modal-trigger">X</button>
+        <h1 id="modalTitle">Voici du Contenu</h1>
+        <p id="dialogDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nam exercitationem nihil veritatis sapiente quia.</p>
+      </div>
+    </div>
+    <button class="modal-btn modal-trigger">Open Modal xxxxxxxxxxxxxxxx</button>-->
+    <!-- FIN MODAL **************************************************************************************** -->
+
+    <div id="myElementTest">Hello World!</div>
+    <br>
+    <button type="button" onclick="changeStyle(0)">Click Me</button>
+
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+<button id="myBtn2" onclick="fct_ouvert_fenetre1()">Open Modal</button>
+
+<button id="nb_page" onclick="nb_page()">Afficher nombre de page url</button>
+<p id="nbre_page"></p>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+</div>
+    <!-- Placez ici le contenu de page -->
+    <body onload = "fct_fetch_onload()"></body>
+
+<!-- DEBUT TEST -->
+    <div id_img_logo>
+    <!--  <a id=id_img_click_logo1 href="images/logo_justStreamIt.png"><img id=id_img_click_logo2 src="images/logo_justStreamIt.png" alt="logo du site" /></a>  -->
+      <a id=id_img_click_logo1><img src="images/logo_justStreamIt.png" alt="logo du site" /></a>
+      <a><button id="id_btn_accueil" onclick= "fct_fetch_onload()">Accueil</button></a>
+      <a><button id="id_btn_categories" onclick= "fct_fetch_onload()">Categories</button></a>
+    </div>
+    
+  <h1  class=titre_cat id="titre_cat1">LE FILM AVEC LE MEILLEUR SCORE </h1>
+  
+  <a class="titre_cat1" id="id_titre_cat1">titre</a>
+  <div id="category_1" class="category_1">
+      <a><button id="id_btn_info" onclick= "fonction_fetch_modale(0,0)">INFO</button></a>
+      <a><button id="id_btn_info" onclick= fonction_ouvert_page_html()>PLAY</button></a>
+      <a class="photo_cat1" id="id_photo_Cat1">titre</a>
+    </div>    
+  
+  <div id="category_01" class="category_01">
+      <div class="btn_cat1" id="id_btn_cat1"> btn image1</div>
+      <div class="btn_res_cat1" id="id_res_cat1">btn_reserve</div>
+      <div id="m_title">titre du film</div>
+      <div id="m_img_url">image url</div>
+      <div id="m_genres">genres</div>
+      <div id="m_date_published">date de sortie</div>
+      <div id="m_avg_vote">vote</div>
+      <div id="m_imbd_score">score</div>
+      <div id="m_directors">directors</div>
+      <div id="m_actors">actors</div>
+      <div id="m_duration">durée</div>
+      <div id="m_countries">countries</div>
+      <div id="m_budget_currency">budget</div>
+      <div id="m_description">descritpion</div>
+      <div id="m_imbd_url">url imdb.com pour click play</div>
+    </div>
+
+  </div id=cat_2345>
+  <h1 class=titre_cat id="titre_cat2">TOUTES CATEGORIE MEILLEURS SCORE</h1>
+      <div id="category_2" class="cat_2345" >
+        <div class="fg_cat2345" id="fg_cat2" onclick="fonction_page_previous_cat0(0)"> <img src="images/fleche_gauche.png" alt="Photo de test" /></div>
+        <p class="img1_cat2" id="img1_cat2">img1 :<br /> <img src="images/img1.jpg" alt="Photo de test" /></p>
+        <p class="img2_cat2" id="img2_cat2">img2 :<br /> <img src="images/32.jpg" alt="Photo de test" /></p>
+        <p class="img3_cat2" id="img3_cat2">img3 :<br /> <img src="images/img4.jpg" alt="Photo de test" /></p>
+        <p class="img4_cat2" id="img4_cat2">img4 :<br /> <img src="images/img1.png" alt="Photo de test" /></p>
+        <p class="img5_cat2" id="img5_cat2">img5 :<br /> <img src="images/img2.png" alt="Photo de test" /></p>
+        <p class="img1_cat2" id="img6_cat2">img6 <img src="images/32.jpg" alt="Photo de test" /></p>
+        <p class="img1_cat2" id="img7_cat2">img7 <img src="images/32.jpg" alt="Photo de test" /></p>
+        <p class="fd_cat2345" id="fd_cat2" onclick="fonction_next_page_2(0)"> <img src="images/fleche_droite.png" alt="Photo de test" /></p>
+        <br>
+      </div>
+          
+  <h1 class=titre_cat id="titre_cat3">CATEGORIE AVENTURE MEILLEURS SCORES</h1>
+      <div id="category_3" class="cat_2345">
+        <p class="fg_cat2345" id="fg_cat3" onclick="fonction_previous_page_2(1)"> <img src="images/fleche_gauche.png" alt="Flèche gauche" /></p>
+          <p class="img1_cat3" id="img1_cat3">image1 <img src="images/img1.jpg" alt="Photo de test" /></p>
+          <p class="img1_cat3" id="img2_cat3">image2 <img src="images/img1.jpg" alt="Photo de test" /></p>
+          <p class="img1_cat3" id="img3_cat3">image3 <img src="images/img1.jpg" alt="Photo de test" /></p>
+          <p class="img1_cat3" id="img4_cat3">image4 <img src="images/img1.jpg" alt="Photo de test" /></p>
+          <p class="img1_cat3" id="img5_cat3">image5 <img src="images/img1.jpg" alt="Photo de test" /></p>
+          <p class="img1_cat3" id="img6_cat3">image5 <img src="images/img1.jpg" alt="Photo de test" /></p>
+          <p class="img1_cat3" id="img7_cat3">image5 <img src="images/img1.jpg" alt="Photo de test" /></p>
+          <p class="fd_cat2345" id="fd_cat3" onclick="fonction_next_page_2(1)"> <img src="images/fleche_droite.png" alt="Photo de test" /></p>
+      </div>
+
+  <h1 class=titre_cat id="titre_cat4">CATEGORIE HISTOIRE MEILLEURS SCORES</h1>
+      <div id="category_4" class="cat_2345">
+        <p class="fg_cat2345" id="fg_cat4" onclick="fonction_previous_page_2(2)"> <img src="images/fleche_gauche.png" alt="Flèche gauche" /></p>
+        <p class="img1_cat4" id="img1_cat4">image1 <img src="images/img1.jpg" alt="Photo de test" /></p>
+        <p class="img1_cat4" id="img2_cat4">image2 <img src="images/img1.jpg" alt="Photo de test" /></p>
+        <p class="img1_cat4" id="img3_cat4">image3 <img src="images/img1.jpg" alt="Photo de test" /></p>
+        <p class="img1_cat4" id="img4_cat4">image4 <img src="images/img1.jpg" alt="Photo de test" /></p>
+        <p class="img1_cat4" id="img5_cat4">image5 <img src="images/img1.jpg" alt="Photo de test" /></p>
+        <p class="img1_cat4" id="img6_cat4">image5 <img src="images/img1.jpg" alt="Photo de test" /></p>
+        <p class="img1_cat4" id="img7_cat4">image5 <img src="images/img1.jpg" alt="Photo de test" /></p>
+        <p class="fd_cat2345" id="fd_cat4" onclick="fonction_next_page_2(2)"> <img src="images/fleche_droite.png" alt="Photo de test" /></p>
+      </div>
+
+      <h1 class=titre_cat id="titre_cat5">CATEGORIE ANIMATION MEILLEURS SCORES</h1>
+      <div id="category_5" class="cat_2345">
+        <p class="fg_cat2345" id="fg_cat5" onclick="fonction_previous_page_2(3)"> <img src="images/fleche_gauche.png" alt="Flèche gauche" /></p>
+        <p class="img1_cat5" id="img1_cat5">image1 <img src="images/img1.jpg" alt="img1.jpg" /></p>
+        <p class="img1_cat5" id="img2_cat5">image2 <img src="images/img1.jpg" alt="img1.jpg" /></p>
+        <p class="img1_cat5" id="img3_cat5">image3 <img src="images/img1.jpg" alt="img1.jpg" /></p>
+        <p class="img1_cat5" id="img4_cat5">image4 <img src="images/img1.jpg" alt="img1.jpg" /></p>
+        <p class="img1_cat5" id="img5_cat5">image5 <img src="images/img1.jpg" alt="img1.jpg" /></p>
+        <p class="img1_cat5" id="img6_cat5">image5 <img src="images/img1.jpg" alt="img1.jpg" /></p>
+        <p class="img1_cat5" id="img7_cat5">image5 <img src="images/img1.jpg" alt="img1.jpg" /></p>
+        <p class="fd_cat2345" id="fd_cat5" onclick="fonction_next_page_2(3)"> <img src="images/fleche_droite.png" alt="Photo de test" /></p>
+      </div>
+      <p id="id_index_cat">id_index_cat pour test</p>
+    
+      <div class="id-btn_test1">
+      <div><button id="id_btn_fetch">Test Requete fetch -id_btn_fetch-</button></div> 
+      <div id="id_result_next">id_result_next</div>
+    </div>
+
+    <div class="id-btn_test2">
+      <div><button id="id_btn_fetch2">Test Requete fetch -id_btn_fetch2- </button></div>
+      <div id="id_result_test">id_result_test</div>
+    </div>  
+    
+    <div class="id-btn_test3">
+      <div><button id="id_test">Test fonction</button></div>
+      <div id="id_result_test2">id_result_test2</div>
+      <div id="id_result_res">adresse réserve id_result_res</div>
+      <div id="id_result_next_page">adresse next id_result_next</div>
+      <div id="id_result_previous_page">adresse page précédente id_result_previous</div>
+      <div id="id_result_img">adresse image id_result_img</div>
+    </div>
+
+  </p>
+  <script type="text/javascript"src="script.js"></script>
+  <script type="text/javascript"src="fonctions_script.js"></script>
+  <script type="text/javascript"src="class_fetch.js"></script>
+  <script type="text/javascript"src="fonctions_fetch.js"></script>
+  
+
+  </p>
+ <ul id="id_liste_fetch">
+            <p>REPONSE FETCH POUR LA PAGE</p>
+            <li id="id_count">count</li>
+            <li id="id_next"> url_next</li>
+            <li id ="id_previous">url_previous</li>
+            <br>
+            <p>REPONSE FETCH POUR LE 1ER FILM DE LA PAGE</p>
+            <li id="id_results_id">results[0][id]]</li>
+            <li id=id_id_url>results[0][url]</li>
+            <li id=id_imdb_url>results[0][imdb_url]</li>
+            <li id=id_title>results[0][title]</li>
+            <li id=id_year>results[0][year]</li>
+            <li id=id_imdb_score>results[0][imdb_score]</li>
+            <li id=id_votes>results[0][vote]</li>
+            <li id=id_image_url>results[0][image_url]</li>
+            <li id=id_directors>results[0][directors]</li>
+            <li id=id_actors>results[0][actors]</li>
+            <li id=id_writers>results[0][writers]</li>
+            <li id=id_genres>results[0][genres]</li>
+            <br>
+            <p>REPONSE FETCH POUR LES TITRES DES FILMS SUIVANTS DE LA PAGE</p>
+            <li id=id2_title>results[1][title]</li>
+            <li id=id3_title>results[2][title]</li>
+            <li id=id4_title>results[3][title]</li>
+            <li id=id5_title>results[4][title]</li>
+            <br>
+		
+		        
+            <li id=id_image_url_0>results[1][image_url]</li>
+            <li id=id_image_url_1>results[2][image_url]</li>
+            <li id=id_image_url_2>results[3][image_url]</li>
+            <li id=id_image_url_3>results[4][image_url]</li>
+            <li id=id_image_url_4>results[5][image_url]</li>
+            <li id=id_image_url_5>results[6][image_url]</li>
+            <li id=id_image_url_6>results[7][image_url]</li>
+            <br>
+
+            <li id=next_page>adresse de la page suivante</li>
+            <li id=previous_page>adresse de la page suivante</li>
+
+  <footer>
+      <!-- Placez ici le contenu du pied de page -->
+  </footer>
+  </body>
+</html>
